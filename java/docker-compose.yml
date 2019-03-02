@@ -1,0 +1,9 @@
+version: "2"
+services:
+    spring_app:
+        build: .
+        environment:
+            - SPRING_APPLICATION_PORT=9090
+            - SPRING_APPLICATION_NAME=这个是配置Docker容器的环境变量，在访问Spring服务的首页的时候后你将看到这段话
+        ports:
+         - 8888:9090
